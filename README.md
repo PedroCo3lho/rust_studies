@@ -1,1 +1,9 @@
 # rust_studies
+Rust projects to practice and improve my Rust skills
+## Resources so far:
+- [Getting Started with Diesel](https://diesel.rs/guides/getting-started)
+- [Diesel-postrges (axum exemples)](https://github.com/tokio-rs/axum/blob/main/examples/diesel-postgres/src/main.rs)
+- [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html)
+- [Build High-Performance REST APIs with Rust and Axum](https://www.twilio.com/en-us/blog/build-high-performance-rest-apis-rust-axum)
+- [Axum docs](https://docs.rs/axum/latest/axum/index.html)
+- [Calling a Web API (Rust Cookbook)](https://rust-lang-nursery.github.io/rust-cookbook/web/clients/apis.html#calling-a-web-api)
