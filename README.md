@@ -7,3 +7,5 @@ Rust projects to practice and improve my Rust skills
 - [Build High-Performance REST APIs with Rust and Axum](https://www.twilio.com/en-us/blog/build-high-performance-rest-apis-rust-axum)
 - [Axum docs](https://docs.rs/axum/latest/axum/index.html)
 - [Calling a Web API (Rust Cookbook)](https://rust-lang-nursery.github.io/rust-cookbook/web/clients/apis.html#calling-a-web-api)
+- [DateTime in Rust](https://stackoverflow.com/questions/50072055/converting-unix-timestamp-to-readable-time-string-in-rust)
+- [Time Stamps input in PostgreSql](https://www.postgresql.org/docs/current/datatype-datetime.html#DATATYPE-DATETIME-INPUT-TIME-STAMPS)
