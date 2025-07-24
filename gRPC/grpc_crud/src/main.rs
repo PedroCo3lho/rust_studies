@@ -1,5 +1,5 @@
+use diesel_async::AsyncPgConnection;
 use diesel_async::pooled_connection::bb8::Pool;
-use diesel_async::{AsyncPgConnection, RunQueryDsl};
 use grpc_crud::create_pool;
 use tonic::{Request, Response, Status, transport::Server};
 use user::user_service_server::{UserService, UserServiceServer};
@@ -49,7 +49,7 @@ impl UserService for CrudSystem {
                 Ok(Response::new(response))
             }
             Err(e) => {
-                eprintln!("Database error: {:?}", e);
+                eprintln!("Database error: {e:?}");
                 Err(Status::internal("Failed to create user"))
             }
         }

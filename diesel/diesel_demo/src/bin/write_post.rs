@@ -1,5 +1,5 @@
 use diesel_demo::*;
-use std::io::{stdin, Read};
+use std::io::{Read, stdin};
 
 fn main() {
     let conncetion = &mut establish_connection();
@@ -14,9 +14,8 @@ fn main() {
     println!("\n Let's write {title} (press {EOF} when finished)\n",);
     stdin().read_to_string(&mut body).unwrap();
 
-    let post = create_post(conncetion, &title, &body);
+    let post = create_post(conncetion, title, &body);
     println!("\nSaved draft {title} with id {}", post.id);
-
 }
 
 #[cfg(not(windows))]

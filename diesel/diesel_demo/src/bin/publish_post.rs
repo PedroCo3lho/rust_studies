@@ -14,7 +14,7 @@ fn main() {
 
     let connection = &mut establish_connection();
 
-    let post =  diesel::update(posts.find(id))
+    let post = diesel::update(posts.find(id))
         .set(published.eq(true))
         .returning(Post::as_returning())
         .get_result(connection)

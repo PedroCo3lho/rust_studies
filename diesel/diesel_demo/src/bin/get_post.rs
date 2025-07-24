@@ -1,13 +1,12 @@
-
 use self::models::Post;
 use diesel::prelude::*;
 use diesel_demo::*;
 use std::env::args;
 
-fn main(){
+fn main() {
     use self::schema::posts::dsl::posts;
 
-    let id =  args()
+    let id = args()
         .nth(1)
         .expect("get_posts requires a post id")
         .parse::<i32>()
@@ -15,7 +14,7 @@ fn main(){
 
     let connection = &mut establish_connection();
 
-    let post =  posts
+    let post = posts
         .find(id)
         .select(Post::as_select())
         .first(connection)
