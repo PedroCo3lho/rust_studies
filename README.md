@@ -11,3 +11,4 @@ Rust projects to practice and improve my Rust skills
 - [DateTime in Rust](https://stackoverflow.com/questions/50072055/converting-unix-timestamp-to-readable-time-string-in-rust)
 - [Time Stamps input in PostgreSql](https://www.postgresql.org/docs/current/datatype-datetime.html#DATATYPE-DATETIME-INPUT-TIME-STAMPS)
 - [Tonic Examples (gRPC)](https://github.com/hyperium/tonic/tree/master/examples)
+- [Disel Async Connection Pooling](https://github.com/weiznich/diesel_async?tab=readme-ov-file#built-in-connection-pooling-support) 
