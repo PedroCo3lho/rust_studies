@@ -1,0 +1,8 @@
+# Cargo.toml
+[workspace]
+members = [
+    "diesel/diesel_demo",
+    "diesel/get_call",
+    "gRPC/helloworld-tonic",
+    "gRPC/grpc_crud",
+]
