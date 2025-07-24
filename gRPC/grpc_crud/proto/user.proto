@@ -3,7 +3,7 @@ package user;
 
 message User {
     string id = 1;
-    string name = 2;
+    string username = 2;
     string email = 3;
 }
 
@@ -15,12 +15,12 @@ service UserService {
 }
 
 message CreateUserRequest {
-    User user = 1;
+    string username = 1;
+    string email = 2;
 }
 
 message CreateUserResponse {
-    string id = 1;
-    string name = 2;
+    User user = 1;
 }
 
 message GetUserRequest {
